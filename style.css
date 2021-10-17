@@ -1,0 +1,195 @@
+:root {
+  --primary-paleblue: hsl(225, 100%, 95%);
+  --primary-Brightblue: hsl(245, 75%, 52%);
+  --neutral-Verypaleblue: hsl(225, 100%, 98%);
+  --neutral-Desaturatedblue: hsl(224, 23%, 55%);
+  --neutral-Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1em;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 95vh;
+  background: var(--primary-paleblue);
+  margin: 30px auto;
+}
+
+.color {
+  color: var(--neutral-Desaturatedblue);
+}
+
+.bg_image-pc {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  position: relative;
+  width: 390px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 25vw;
+  text-align: center;
+  background: var(--neutral-Verypaleblue);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+
+.user_hero {
+  position: relative;
+  max-width: 100%;
+}
+
+.card_title {
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.card_text {
+  font-weight: 700;
+  font-size: 0.9em;
+  margin: 0.5em 2em 1em;
+  letter-spacing: 0;
+  word-spacing: 0.4px;
+}
+
+.plan {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+
+  border-radius: 20px;
+  background: var(--primary-paleblue);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.plan_icon,
+.plan_change {
+  position: absolute;
+}
+
+.plan_icon {
+  left: 0;
+  bottom: 20px;
+  margin-left: 1em;
+}
+
+.plan_text {
+  position: relative;
+  right: 1.5em;
+}
+.plan_title {
+  top: 0.4em;
+}
+
+.plan_price {
+  bottom: 0.5em;
+}
+
+.plan_change {
+  top: 35px;
+  right: 0;
+  padding-right: 1em;
+}
+
+.enlace {
+  text-decoration: none;
+}
+
+.botton_pay {
+  position: relative;
+  width: 300px;
+  padding: 1em;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19),
+    0px 15px 20px rgba(0, 0, 0, 0.23);
+  background: var(--primary-Brightblue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.botton_pay--text {
+  font-size: 0.9em;
+  color: var(--neutral-Verypaleblue);
+  word-spacing: 2px;
+}
+
+.plan_cancel {
+  margin: 0 0.5em 3em;
+  padding-top: 1em;
+}
+
+.attribution {
+  position: fixed;
+  margin: auto;
+  bottom: 5vh;
+  left: 10em;
+}
+
+.firma {
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    background: var(--primary-paleblue);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 100%;
+    max-width: 400px;
+    background: none;
+  }
+
+  .card {
+    width: 290px;
+    height: 600px;
+  }
+
+  .botton_pay {
+    width: 250px;
+  }
+
+  .plan {
+    width: 260px;
+    font-size: 15px;
+  }
+
+  .plan_cancel {
+    font-size: 18px;
+  }
+
+  .attribution {
+    left: 3em;
+    padding: 1em;
+  }
+}
